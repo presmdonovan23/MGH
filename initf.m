@@ -59,7 +59,7 @@ elseif nprob == 4
     end
     x0 = [1,1]';
     x0s = 'x_0 = (1,1)';
-    xmin = [10e6,2e-6]';
+    xmin = [1e6,2e-6]';
     fname = 'Brown Badly Scaled'; 
     mname = 'badscb';
     fh = @(x,evalDer) badscb(n,m,x,evalDer);
@@ -150,7 +150,7 @@ elseif nprob == 11
     end
     x0 = [5,2.5,0.15]';
     x0s = 'x_0 = (5,2.5,0.15)';
-    xmin = [5,2.5,.15]';
+    xmin = [50,25,1.5]';
     fname = 'Gulf Research and Development'; 
     mname = 'gulf';
     fh = @(x,evalDer) gulf(n,m,x,evalDer);
